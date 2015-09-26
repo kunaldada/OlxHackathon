@@ -13,7 +13,7 @@
 -(NSArray*) getProductListForCategory:(NSString*) catStr withSearchStr:(NSString*)searchStr{
     
 //    NSArray *dataDict = [self fetchDictForKey:catStr];
-    NSArray *dataArray = [self bindData];
+    NSArray *dataArray = [self bindDataForCategory:catStr];
     if (![searchStr isEqualToString:@""]) {
         dataArray = [self searchForKeyWord:searchStr inArray:dataArray];
     }
@@ -29,15 +29,45 @@
 //    return dataDict;
 //}
 
--(NSArray*) bindData{
+-(NSArray*) bindDataForCategory:(NSString*)category{
     NSMutableArray *repo = [[NSMutableArray alloc] init];
-    for (int i=0;i<10;i++) {
+    Product *product1 = [[Product alloc] init];
+    Product *product2 = [[Product alloc] init];
+    
+    if ([category isEqualToString:@"Mobiles"]) {
+        product1.title=@"Samsung Duos";
+        product1.price=@"Rs. 10,000";
+        product1.timePlace=@"02:08 pm in Gurgaon";
         
-        Product *product = [[Product alloc] init];
-        product.title=@"Samsung";
-        product.price=@"Rs. 1,000";
-        product.timePlace=@"02:08 pm in Gurgaon";
-        [repo addObject:product];
+        product2.title=@"HTC One X";
+        product2.price=@"Rs. 12,000";
+        product2.timePlace=@"01:08 am in Mumbai";
+
+    }
+    if ([category isEqualToString:@"Cars"]) {
+        product1.title=@"Ford Figo";
+        product1.price=@"Rs. 1,00,000";
+        product1.timePlace=@"02:18 pm in Gurgaon";
+        
+        product2.title=@"Honda City";
+        product2.price=@"Rs. 1,20,000";
+        product2.timePlace=@"00:08 am in Mumbai";
+        
+    }
+    if ([category isEqualToString:@"Electronics"]) {
+        product1.title=@"Washing Machine";
+        product1.price=@"Rs. 11,100";
+        product1.timePlace=@"10:01 am in Pune";
+        
+        product2.title=@"Kelvinator fridge";
+        product2.price=@"Rs. 5,000";
+        product2.timePlace=@"01:08 am in Mumbai";
+        
+    }
+    
+    for (int i=0;i<6;i++) {
+        [repo addObject:product1];
+        [repo addObject:product2];
     }
     return repo;
     
@@ -47,7 +77,9 @@
     NSMutableArray *responseArray = [[NSMutableArray alloc] init];
     
     for (Product *product in dataArray) {
-        if (([product.title rangeOfString:keyWord].location == NSNotFound)) {
+        if (([product.title rangeOfString:keyWord options:NSCaseInsensitiveSearch].location == NSNotFound)) {
+            
+            
             
         } else {
             [responseArray addObject:product];

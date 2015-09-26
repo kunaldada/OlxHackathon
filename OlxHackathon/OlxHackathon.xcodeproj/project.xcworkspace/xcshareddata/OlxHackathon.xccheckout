@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A12E401D-D108-4990-B37D-08B9D6B42FCC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OlxHackathon</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7921FAA1000E5558C4813673DE7098BB25B1E83C</key>
+		<string>https://github.com/kunaldada/OlxHackathon.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OlxHackathon/OlxHackathon.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7921FAA1000E5558C4813673DE7098BB25B1E83C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kunaldada/OlxHackathon.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7921FAA1000E5558C4813673DE7098BB25B1E83C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7921FAA1000E5558C4813673DE7098BB25B1E83C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OlxHackathon</string>
+		</dict>
+	</array>
+</dict>
+</plist>

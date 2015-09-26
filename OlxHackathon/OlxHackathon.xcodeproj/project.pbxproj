@@ -26,6 +26,8 @@
 		0C5194091BB68DD800B1CCC4 /* DummyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5194081BB68DD800B1CCC4 /* DummyData.m */; };
 		0C51940E1BB696AB00B1CCC4 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C51940D1BB696AB00B1CCC4 /* Product.m */; };
 		0C5194141BB6A00C00B1CCC4 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0C5194131BB6A00C00B1CCC4 /* images.jpeg */; };
+		0C5194181BB6A9C800B1CCC4 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5194161BB6A9C800B1CCC4 /* FilterViewController.m */; };
+		0C5194191BB6A9C800B1CCC4 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C5194171BB6A9C800B1CCC4 /* FilterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,9 @@
 		0C51940C1BB696AB00B1CCC4 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		0C51940D1BB696AB00B1CCC4 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		0C5194131BB6A00C00B1CCC4 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		0C5194151BB6A9C800B1CCC4 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		0C5194161BB6A9C800B1CCC4 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		0C5194171BB6A9C800B1CCC4 /* FilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +185,9 @@
 				0C5194011BB6860A00B1CCC4 /* CategoryTableViewCell.h */,
 				0C5194021BB6860A00B1CCC4 /* CategoryTableViewCell.m */,
 				0C5194031BB6860A00B1CCC4 /* CategoryTableViewCell.xib */,
+				0C5194151BB6A9C800B1CCC4 /* FilterViewController.h */,
+				0C5194161BB6A9C800B1CCC4 /* FilterViewController.m */,
+				0C5194171BB6A9C800B1CCC4 /* FilterViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -281,6 +289,7 @@
 				0C5194141BB6A00C00B1CCC4 /* images.jpeg in Resources */,
 				0C5194051BB6860A00B1CCC4 /* CategoryTableViewCell.xib in Resources */,
 				0C5193CF1BB672D200B1CCC4 /* LaunchScreen.xib in Resources */,
+				0C5194191BB6A9C800B1CCC4 /* FilterViewController.xib in Resources */,
 				0C5193CC1BB672D200B1CCC4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +310,7 @@
 			files = (
 				0C5194001BB67E6D00B1CCC4 /* LXReorderableCollectionViewFlowLayout.m in Sources */,
 				0C5193C71BB672D200B1CCC4 /* ViewController.m in Sources */,
+				0C5194181BB6A9C800B1CCC4 /* FilterViewController.m in Sources */,
 				0C5193C41BB672D200B1CCC4 /* AppDelegate.m in Sources */,
 				0C51940E1BB696AB00B1CCC4 /* Product.m in Sources */,
 				0C5194041BB6860A00B1CCC4 /* CategoryTableViewCell.m in Sources */,

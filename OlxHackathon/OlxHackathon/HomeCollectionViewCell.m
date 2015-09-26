@@ -25,6 +25,7 @@
     self.categoryTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, cellSize.width,cellSize.height)];
     self.categoryTableView.delegate=self;
     self.categoryTableView.dataSource=self;
+    self.backgroundColor = [UIColor lightGrayColor];
     [self addSubview:self.categoryTableView];
     [self bringSubviewToFront:self.categoryTableView];
     

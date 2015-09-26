@@ -32,6 +32,6 @@ CG_INLINE CGFloat getScreenHeight() {return [UIScreen mainScreen].bounds.size.he
 #define IS_IPHONE6 (([[UIScreen mainScreen] bounds].size.height-667)?NO:YES)
 #define IS_IPHONE6_PLUS (([[UIScreen mainScreen] bounds].size.height-736)?NO:YES)
 
-#define GET_CELL_SIZE (CGSizeMake(getScreenWidth()-50, getScreenHeight()-108))
+#define GET_CELL_SIZE (CGSizeMake(getScreenWidth()-20, getScreenHeight()-108))
 
 //#define GET_CELL_SIZE (CGSizeMake(100, 100))
