@@ -58,6 +58,9 @@
     }
     
 }
+
+
+
 -(void) writeToUserDefaults{
     
     [[NSUserDefaults standardUserDefaults] setValue:self.categoriesArray forKey:@"Categories"];
@@ -200,12 +203,14 @@
     searchStr = searchText;
     if ([searchText isEqualToString:@""]) {
         [self.searchBar resignFirstResponder];
+        [self.searchBar endEditing:YES];
     }
     
 //    NSLog(@"%@",searchText);
     [self.homeCollectionView reloadData];
     
 }
+
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     [self.searchBar resignFirstResponder];
 }// called when keyboard search button pressed

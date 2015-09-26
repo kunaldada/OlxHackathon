@@ -68,7 +68,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    wasCategoryChanged=YES;
+/*    wasCategoryChanged=YES;
     if ([selectedCategoriesArray containsObject:[categoriesArray objectAtIndex:indexPath.row]]) {
         [selectedCategoriesArray removeObject:[categoriesArray objectAtIndex:indexPath.row]];
     }
@@ -77,7 +77,7 @@
     }
     NSArray *idxArray = [[NSArray alloc] initWithObjects:indexPath, nil];
     [tableView reloadRowsAtIndexPaths:idxArray withRowAnimation:UITableViewRowAnimationNone];
-    
+  */
 }
 
 
