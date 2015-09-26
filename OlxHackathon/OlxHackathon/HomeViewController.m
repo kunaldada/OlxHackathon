@@ -38,7 +38,7 @@
     [self.homeCollectionView registerNib:[UINib nibWithNibName:@"HomeCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"homeCell"];
     self.homeCollectionView.showsHorizontalScrollIndicator = NO;
 //    self.homeCollectionView.pagingEnabled = YES;
-//    self.navigationItem.rightBarButtonItem = [self getRightMenuButton];
+    self.navigationItem.rightBarButtonItem = [self getRightMenuButton];
         // Do any additional setup after loading the view from its nib.
 }
 
@@ -87,10 +87,10 @@
 
 }
 -(void) reloadForNewCategoriesWithCategoryArray:(NSArray*) categoryArray{
-    if (categoryArray) {
-        self.categoriesArray = [NSMutableArray arrayWithArray:categoryArray];
-    }
-    reloadCollectionView=YES;
+//    if (categoryArray) {
+//        self.categoriesArray = [NSMutableArray arrayWithArray:categoryArray];
+//    }
+//    reloadCollectionView=YES;
 
 }
 
@@ -198,10 +198,22 @@
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     
     searchStr = searchText;
-    NSLog(@"%@",searchText);
+    if ([searchText isEqualToString:@""]) {
+        [self.searchBar resignFirstResponder];
+    }
+    
+//    NSLog(@"%@",searchText);
     [self.homeCollectionView reloadData];
     
 }
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    [self.searchBar resignFirstResponder];
+}// called when keyboard search button pressed
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+    [self.searchBar resignFirstResponder];
+}
+
+
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
@@ -214,7 +226,6 @@
 {
     return 10.0;
 }
-
 
 
 
