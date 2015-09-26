@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="KGk-i7-Jjw" customClass="CategoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="HOJ-wy-rsc">
+                        <rect key="frame" x="8" y="10" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="fGN-qs-FNj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o31-1q-q3G">
+                        <rect key="frame" x="116" y="10" width="196" height="49"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXP-JW-trs">
+                        <rect key="frame" x="116" y="60" width="196" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time, Place" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxB-17-S5M">
+                        <rect key="frame" x="116" y="90" width="196" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QxB-17-S5M" firstAttribute="leading" secondItem="HOJ-wy-rsc" secondAttribute="trailing" constant="8" id="3fD-mY-Tx7"/>
+                    <constraint firstItem="WXP-JW-trs" firstAttribute="leading" secondItem="HOJ-wy-rsc" secondAttribute="trailing" constant="8" id="6mj-21-3HB"/>
+                    <constraint firstItem="o31-1q-q3G" firstAttribute="leading" secondItem="HOJ-wy-rsc" secondAttribute="trailing" constant="8" id="7s0-rT-vkj"/>
+                    <constraint firstItem="WXP-JW-trs" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="J2t-hX-weg"/>
+                    <constraint firstItem="o31-1q-q3G" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="NXR-Z2-R7v"/>
+                    <constraint firstItem="HOJ-wy-rsc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="P2M-fB-nYm"/>
+                    <constraint firstItem="QxB-17-S5M" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="XXA-kH-zup"/>
+                    <constraint firstItem="o31-1q-q3G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="d2E-RT-fvC"/>
+                    <constraint firstItem="QxB-17-S5M" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="f6g-1w-v2X"/>
+                    <constraint firstItem="WXP-JW-trs" firstAttribute="top" secondItem="o31-1q-q3G" secondAttribute="bottom" constant="1" id="iNg-kF-3aq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WXP-JW-trs" secondAttribute="bottom" constant="30" id="kFa-Mg-fQU"/>
+                    <constraint firstItem="QxB-17-S5M" firstAttribute="top" secondItem="o31-1q-q3G" secondAttribute="bottom" constant="31" id="lpA-FV-M74"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HOJ-wy-rsc" secondAttribute="bottom" constant="1" id="nik-FD-u4d"/>
+                    <constraint firstItem="WXP-JW-trs" firstAttribute="top" secondItem="o31-1q-q3G" secondAttribute="bottom" constant="1" id="uhh-ox-PX6"/>
+                    <constraint firstItem="HOJ-wy-rsc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="uzo-1f-OSE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="priceLabel" destination="WXP-JW-trs" id="cPj-Js-4Qx"/>
+                <outlet property="timePlaceLabel" destination="QxB-17-S5M" id="sBn-M1-tDV"/>
+                <outlet property="titleLabel" destination="o31-1q-q3G" id="X1E-6h-Xfv"/>
+            </connections>
+            <point key="canvasLocation" x="57" y="287"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="images.jpeg" width="225" height="225"/>
+    </resources>
+</document>

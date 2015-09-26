@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="homeCollectionView" destination="MaP-sI-yRm" id="Nyc-g7-HAM"/>
+                <outlet property="searchBar" destination="zQY-3F-ZwK" id="IGP-RM-s4G"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MaP-sI-yRm">
+                    <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BhS-Jy-SOD">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Kxt-JI-lxN"/>
+                        <outlet property="delegate" destination="-1" id="d9J-44-HRc"/>
+                    </connections>
+                </collectionView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="zQY-3F-ZwK">
+                    <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Jud-YN-ZaD"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="OU1-g8-MHj"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MaP-sI-yRm" secondAttribute="bottom" id="1bC-E3-ZwF"/>
+                <constraint firstItem="zQY-3F-ZwK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FtP-xC-hXF"/>
+                <constraint firstItem="zQY-3F-ZwK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="GBB-TB-xCa"/>
+                <constraint firstAttribute="trailing" secondItem="MaP-sI-yRm" secondAttribute="trailing" id="IHc-yt-cYv"/>
+                <constraint firstAttribute="trailing" secondItem="zQY-3F-ZwK" secondAttribute="trailing" id="Skj-M4-fLp"/>
+                <constraint firstItem="MaP-sI-yRm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XdS-oN-bUu"/>
+                <constraint firstItem="MaP-sI-yRm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="k5J-hi-fIv"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,37 @@
+//
+//  OlxPrefix.pch
+//  OlxHackathon
+//
+//  Created by Kunal Chelani on 9/26/15.
+//  Copyright (c) 2015 til. All rights reserved.
+//
+
+#ifndef OlxHackathon_OlxPrefix_pch
+#define OlxHackathon_OlxPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+
+CG_INLINE CGFloat getWidth(UIView *view) {return view.frame.size.width;}
+CG_INLINE CGFloat getHeight(UIView *view) {return view.frame.size.height;}
+CG_INLINE CGFloat getOriginX(UIView *view) {return view.frame.origin.x;}
+CG_INLINE CGFloat getOriginY(UIView *view) {return view.frame.origin.y;}
+
+CG_INLINE CGFloat getScreenWidth() {return [UIScreen mainScreen].bounds.size.width; }
+
+CG_INLINE CGFloat getScreenHeight() {return [UIScreen mainScreen].bounds.size.height; }
+
+#define RGBA(r, g, b, a)    [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+
+#define IS_IPHONE4 (([[UIScreen mainScreen] bounds].size.height-480)?NO:YES)
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+#define IS_IPHONE6 (([[UIScreen mainScreen] bounds].size.height-667)?NO:YES)
+#define IS_IPHONE6_PLUS (([[UIScreen mainScreen] bounds].size.height-736)?NO:YES)
+
+#define GET_CELL_SIZE (CGSizeMake(getScreenWidth()-50, getScreenHeight()-108))
+
+//#define GET_CELL_SIZE (CGSizeMake(100, 100))
